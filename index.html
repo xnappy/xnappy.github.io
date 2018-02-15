@@ -80,13 +80,18 @@
 				<div class="col-md-4">
 					<ul class="info">
 						<li><span class="first-block">Full Name:</span><span class="second-block">Mehmet Ali Incekara</span></li>
-						<li><span class="first-block">Email:</span><div class="g-recaptcha" data-sitekey="6Lf8eUYUAAAAANwcZC1V_4Go718mTwpOI4ERwxwS"></div></li>
+						<li><span class="first-block">Email:</span>
+							<form action="javascript:alert(grecaptcha.getResponse(reCAPTCHA_Widget));">
+								<div id="reCAPTCHA_Element"></div>
+							</form>
+						</li>
 					</ul>
 				</div>
 				<div class="col-md-8">
 					<h2>Hello There!</h2>
-					<p>There live the blind texts far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in bookmarksgrove there live the blind texts far from the countries.</p>
-					<p>Far far away, behind the word mountains, Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci there live the blind texts from the countries Vokalia and Consonantia, there live the blind texts. Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+					<p>Introduction: My name is Mehmet Ali Incekara.</p>
+					<p>Skills etc.</p>
+					<p>Hobbies of me are Music, Filmographie, Cars and espacially always the technology behind these things!</p>
 				</div>
 			</div>
 		</div>
@@ -392,7 +397,7 @@
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<!-- Recaptcha -->
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
