@@ -148,9 +148,15 @@
 }());
 
 // reCAPTCHA
-	var reCAPTCHA_Widget = function() {
-        grecaptcha.render('reCAPTCHA_Element', {
-			'size' : 'compact',
-            'sitekey' : '6Lf8eUYUAAAAANwcZC1V_4Go718mTwpOI4ERwxwS'
-        });
-    };
+var reCAPTCHA_Widget = function() {
+	grecaptcha.render('reCAPTCHA_Element', {
+		'size' : 'compact',
+		'sitekey' : '6Lf8eUYUAAAAANwcZC1V_4Go718mTwpOI4ERwxwS',
+		'callback' : 'callbackRecaptcha'
+	});
+};
+
+var callbackRecaptcha = function(){
+	document.getElementById('spanEmailaddress').style.visibility="visible";
+	document.getElementById('reCAPTCHA_Element').style.visibility="hidden";		
+}

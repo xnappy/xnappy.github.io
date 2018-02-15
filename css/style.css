@@ -19,6 +19,11 @@ body {
   background: #fff;
 }
 
+span.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
