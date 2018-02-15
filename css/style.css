@@ -19,7 +19,7 @@ body {
   background: #fff;
 }
 
-span.reverse {
+div.reverse {
   unicode-bidi: bidi-override;
   direction: rtl;
 }
